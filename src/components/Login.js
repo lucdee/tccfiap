@@ -40,7 +40,7 @@ const Login = () => {
 <div className={styles['banner']} >
   
 </div>
-<div style={{ margin: "auto"  , width: "50%",  minWidth: "250px"}}>
+<div style={{ margin: "auto"  , width: "60%",  minWidth: "250px"}}>
       <div  className="p-4 box" style={{ backgroundColor: "#1b1923" }}>
         <h2 className="mb-3" style={{ color: "white" }}>"App Dança"</h2>
         {error && <Alert variant="danger">{error}</Alert>}

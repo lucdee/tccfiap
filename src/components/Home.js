@@ -28,9 +28,7 @@ const Home = () => {
         </div>
       </div>
       
-      <div className="d-grid gap-2">
-        
-      </div>
+     
     </>
   );
 };
