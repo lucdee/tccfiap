@@ -4,7 +4,7 @@ import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import GoogleButton from "react-google-button";
 import { useUserAuth } from "../context/UserAuthContext";
-import '../styles/Login.scss';
+import styles from '../styles/Login.module.scss';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -36,8 +36,8 @@ const Login = () => {
 
   return (
     <>
-    <div style={{ display: "flex" , width: "100%", backgroundColor: "#15141b" }}>
-<div style={{ display: "flex" , width: "20%", height: "100vh" ,  backgroundColor: "#1b1923" }}>
+    <div className={styles['busca-section']} style={{ display: "flex" , width: "100%"}}>
+<div className={styles['banner']} >
   
 </div>
 <div style={{ margin: "auto"  , width: "50%",  minWidth: "250px"}}>

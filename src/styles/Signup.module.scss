@@ -1,0 +1,28 @@
+.busca-section{
+    width: 80%;
+    margin: auto;
+    background-color: #1b1923;
+    margin-top: auto;
+    height: 50%;
+    h2{
+        color: white;
+        margin-top: 10px;
+    }
+}
+.busca-section-div{
+    display: grid;
+    height: 100vh;
+    background-color: #15141b;
+}
+
+.logar{
+    width: 200;
+    margin: auto;
+    background-color: #1b1923;
+    height: 25px;
+    align-items: center;
+    display: grid;
+    p{
+        color: white;
+    }
+}
