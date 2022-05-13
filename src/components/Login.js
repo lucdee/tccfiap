@@ -38,11 +38,11 @@ const Login = () => {
     <>
     <div className={styles['busca-section']} style={{ display: "flex" , width: "100%"}}>
 <div className={styles['banner']} >
-  
+  <p>Logo</p>
 </div>
-<div style={{ margin: "auto"  , width: "60%",  minWidth: "250px"}}>
+<div className={styles['table']}>
       <div  className="p-4 box" style={{ backgroundColor: "#1b1923" }}>
-        <h2 className="mb-3" style={{ color: "white" }}>"App Dança"</h2>
+        <h2 className="mb-3" style={{ color: "white" }}>Logo</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">

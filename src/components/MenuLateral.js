@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
-
 import styles from '../styles/MenuLateral.module.scss';
 
 const MenuLateral = () => {
@@ -22,6 +20,7 @@ const MenuLateral = () => {
             <span className={styles.line} />
             <span className={styles.line} />
           </button>
+         
       </div>
       
    

@@ -5,14 +5,39 @@
 }
 .busca-section{
    background-color: #15141b;
- 
+ h2{
+    width: 10%;
+
+ }
 }
 
 .banner{
    height: 100vh;
    width: 20%;
    background-color: #1b1923;
+   display: grid;
+  
+   p{
+      color: white;
+      margin: auto;
+      @media only screen and (max-width: 800px) {
+        display: none;
+     }
+
+   }
    @media only screen and (max-width: 800px) {
       width: 0px;
   }
 }
+
+body{
+   background-color: #15141b;
+ }
+
+ .table{
+    width: 40%;
+    margin: auto;
+    @media only screen and (max-width: 800px) {
+      width: 80%;
+  }
+ }
