@@ -38,11 +38,13 @@ const Login = () => {
     <>
     <div className={styles['busca-section']} style={{ display: "flex" , width: "100%"}}>
 <div className={styles['banner']} >
-  <p>Logo</p>
+  
+  <p>LOCA DANCE</p>
+  
 </div>
 <div className={styles['table']}>
       <div  className="p-4 box" style={{ backgroundColor: "#1b1923" }}>
-        <h2 className="mb-3" style={{ color: "white" }}>Logo</h2>
+        <h2 className="mb-3" style={{ color: "white" }}>LOCA DANCE</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -79,7 +81,7 @@ const Login = () => {
       
       <div className="p-4 box mt-3 text-center" style={{ backgroundColor: "#1b1923" }}>
       <h1 style={{ fontSize: "20px" , color: "white"}}> Ou </h1> <hr style={{ backgroundColor: "white" }} /> 
-        <Link to="/signup">Crie sua conta</Link>
+        <Link to="/signup"><p>Crie sua conta</p></Link>
       </div>
       </div>
     </div>

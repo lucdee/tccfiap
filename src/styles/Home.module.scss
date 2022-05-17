@@ -8,9 +8,13 @@
     h1{
         color: white;
         margin-left: 20px;
-    }
+        margin-top: 8px;
+        @media only screen and (max-width: 600px) {
+            font-size: 20px;
+        }
+       
 }
-
+}
 .menu-user{
     display: flex;
     align-items: center;
