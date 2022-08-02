@@ -57,9 +57,11 @@ transition: 0s;
     background-color: #1b1923;
     transition: 0s;
     position: absolute;
+    position: fixed;
     @media only screen and (max-width: 650px) {
       width: 100%;
       position: absolute;
+      position: fixed;
       height: 100vh;
   }
   }
