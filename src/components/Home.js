@@ -3,15 +3,16 @@ import Layout from "./Layout";
 import styles from '../styles/Home.module.scss';
 import Card from "./Card";
 import Video from "./Video";
+import SimpleMap from "./MapPage";
 
 const Home = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(true);
  
   return (
-    <>
+    <div  className={styles['principal']}>
     <Layout/>
-    <figure className={styles['hero-img']}></figure>
+    <SimpleMap/>
     <button
           className={`${styles["toggler-button"]} ${
             isMenuOpen ? styles["is-menu-open"] : ""
@@ -73,7 +74,7 @@ const Home = () => {
      </div>
     </div>
     </div>
-    </>
+    </div>
   );
 };
 

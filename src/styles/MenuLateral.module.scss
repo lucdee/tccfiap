@@ -58,6 +58,7 @@ transition: 0s;
     transition: 0s;
     position: absolute;
     position: fixed;
+    z-index: 1;
     @media only screen and (max-width: 650px) {
       width: 100%;
       position: absolute;

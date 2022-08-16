@@ -43,7 +43,7 @@ const Login = () => {
   
 </div>
 <div className={styles['table']}>
-      <div  className="p-4 box" style={{ backgroundColor: "#1b1923" }}>
+      <div  className="p-4 box" style={{ background: "#1b1923" }}>
         <h2 className="mb-3" style={{ color: "white" }}>LOCA DANCE</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
