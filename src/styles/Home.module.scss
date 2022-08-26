@@ -24,9 +24,7 @@
 
 .destaques{
   width: 100%;
-
-  background-color: #1b1923;
-  color: white;
+  color: gray;
   padding: 10px;
 }
 .destaques-card{
@@ -70,7 +68,7 @@
     display: block;
     width: 100%;
     height: 4px;
-    background: white;
+    background: #C07CF4;
     transition: transform 0.5s ease 0s, opacity 0.2s;
   }
   
@@ -89,22 +87,25 @@
   .categories-open{
     width: 100%;
     height: 40px;
- 
     display: flex;
-   
+    margin-bottom: 40px;
     @media screen and (max-width: 600px) {
         display: grid;
         height: 60vh;
        width: unset;
         border-width: 0px 1px 0px 0px;
-        border-color: black;
+        border-color: white;
         }
     button{
         width: 17%;
         height: 100%;
         border-width: 0px 0px 0px 0px;
-        background-color: #15141b;
+        background-color:#C07CF4;
         color: white;
+        @media screen and (max-width: 600px) {
+          background-color:white;
+          color: gray;
+          }
         
     }
   }

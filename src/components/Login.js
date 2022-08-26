@@ -36,15 +36,18 @@ const Login = () => {
 
   return (
     <>
+     
     <div className={styles['busca-section']} style={{ display: "flex" , width: "100%"}}>
 <div className={styles['banner']} >
   
-  <p>LOCA DANCE</p>
+  <img src="/image39.png"></img>
   
 </div>
 <div className={styles['table']}>
-      <div  className="p-4 box" style={{ background: "#1b1923" }}>
-        <h2 className="mb-3" style={{ color: "white" }}>LOCA DANCE</h2>
+  <h1>Crie ou logue em sua conta e faça parte da nossa comunidade</h1>
+  
+      <div  className="p-4 box" style={{ background: "white" , boxShadow: "1px 1px 5px  black" ,borderRadius: "10px"}}>
+        <h2 className="mb-3" style={{ color: "gray" }}>Login</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -79,8 +82,8 @@ const Login = () => {
         </div>
       </div>
       
-      <div className="p-4 box mt-3 text-center" style={{ backgroundColor: "#1b1923" }}>
-      <h1 style={{ fontSize: "20px" , color: "white"}}> Ou </h1> <hr style={{ backgroundColor: "white" }} /> 
+      <div className="p-4 box mt-3 text-center" style={{ backgroundColor: "white" , boxShadow: "1px 1px 5px  black" , borderRadius: "10px"}}>
+      <h1 style={{ fontSize: "20px" , color: "gray"}}> Ou </h1> <hr style={{ backgroundColor: "black" }} /> 
         <Link to="/signup"><p>Crie sua conta</p></Link>
       </div>
       </div>

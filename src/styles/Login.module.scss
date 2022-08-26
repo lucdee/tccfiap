@@ -4,7 +4,16 @@
    background-color: blue;
 }
 .busca-section{
-   background-color: #15141b;
+   background-color: white;
+   height: 100vh;
+   overflow-y: scroll;
+   h1{
+      font-size: 26px;
+      margin-bottom: 30px;
+      color: gray;
+      text-align: center;
+     
+   }
 
  h2{
     width: 10%;
@@ -15,10 +24,17 @@
 
 .banner{
    height: 100vh;
-   width: 20%;
-   background-color: #1b1923;
+   width: 26%;
+   background-color: white;
    display: grid;
-  
+  img{
+   height: 100vh;
+   width: 26%;
+   position: fixed;
+   @media only screen and (max-width: 800px) {
+      display: none;
+   }
+  }
    p{
       color: white;
       margin: auto;
@@ -33,17 +49,19 @@
 }
 
 body{
-   background-color: #15141b;
+   background-color: white;
  }
 
  .table{
+ 
     width: 40%;
-   
     margin: auto;
-    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px #63005b, 0 0 20px #63005b,
-    0 0 30px #63005b, 0 0 40px #63005b;
-    
-    @media only screen and (max-width: 800px) {
+     @media only screen and (max-width: 800px) {
       width: 80%;
   }
+ }
+
+ .header-login{
+   max-width: 200px;
+   height: 100px;
  }
