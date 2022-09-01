@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 import styles from '../styles/Layout.module.scss';
 import MenuLateral from "./MenuLateral";
+import { CgProfile } from 'react-icons/cg';
 
 const Layout = () => {
   const { logOut, user } = useUserAuth();
@@ -24,10 +25,12 @@ const Layout = () => {
     
       <h1>LOCA DANCE</h1>
       <div className={styles['menu-user']}>
-   <p> {user && user.email} </p> 
-        <Button variant="primary" onClick={handleLogout}>
+      <Button variant="primary" onClick={handleLogout}>
           Sair
         </Button>
+   <p> {user && user.email} </p> 
+  <a href="/profile"><CgProfile className={styles['icon-profile']}/> </a> 
+       
         </div>
       </div>
      
