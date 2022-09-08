@@ -6,6 +6,7 @@ import Signup from "./components/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Profile from "./components/Profile";
+import Detail from "./components/Detail";
 
 function App() {
   return (
@@ -32,7 +33,11 @@ function App() {
               />
               <Route path="/" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
-            
+              <Route path="post/:id/:card/:img"  element={
+                  <ProtectedRoute>
+                    <Detail />
+                  </ProtectedRoute>
+                } />
             </Routes>
           </UserAuthContextProvider>
 
