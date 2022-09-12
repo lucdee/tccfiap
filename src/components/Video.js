@@ -1,20 +1,21 @@
 import React from "react";
-import { BsFillPlayFill } from "react-icons/bs";
-import styles from '../styles/Card.module.scss';
+import { FcDislike, FcLike } from "react-icons/fc";
+import styles from "../styles/Card.module.scss";
 
-const Video = () => {
-
- 
- 
+const Video = ({ card, id, img }) => {
   return (
-    <button className={styles['card-bt']}>
-   <div className={styles['card']}>
-   
-  
-   <BsFillPlayFill size={"100px"} />
-  
-   </div>
-   </button>
+    <a href={`/post/${id}/${card}/${img}`}>
+      <button className={styles["card-bt"]}>
+        <div className={styles["card"]}>
+          <img src={`/${img}`}></img>
+          <h1>{card}</h1>
+
+          <div className={styles["card-banner"]}>
+            <FcLike size={"20px"} />
+          </div>
+        </div>
+      </button>
+    </a>
   );
 };
 

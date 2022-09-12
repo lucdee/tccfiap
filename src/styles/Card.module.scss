@@ -3,28 +3,29 @@
     padding: 5px;
     width: 400px;
     height: 200px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
+border-radius: 10px;
     color: white;
     display: grid;
     position: relative;
+
     img{
         width: 100%;
     height: 100%;
     position: absolute;
     z-index: 0;
-    border-radius: 5px;
+
    margin: 0;
+border-radius: 10px;
     }
     @media screen and (max-width: 600px) {
      width: 100%;
     
     }
 }
-.card-bt{
-  
-    border-radius: 10px;
+.card-bt {
     margin: 10px 2px;
+border-width: 0px;
+    background-color: white;
     @media screen and (max-width: 600px) {
         width: 100%;
        
@@ -34,7 +35,6 @@
     z-index: 0;
     display: flex;
     margin-top: auto;
-    background-color: #1b1923;
     width: 100%;
     height: 36%;
     align-items: center;
