@@ -7,6 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Profile from "./components/Profile";
 import Detail from "./components/Detail";
+import Map from "./components/Map";
 
 function App() {
   return (
@@ -36,6 +37,11 @@ function App() {
               <Route path="post/:id/:card/:img"  element={
                   <ProtectedRoute>
                     <Detail />
+                  </ProtectedRoute>
+                } />
+                 <Route path="map"  element={
+                  <ProtectedRoute>
+                    <Map/>
                   </ProtectedRoute>
                 } />
             </Routes>
