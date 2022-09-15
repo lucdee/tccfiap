@@ -14,30 +14,56 @@ const Map = () => {
  
 console.log(isLocal1)
   return (
-    <>
-
-    <S.Container >
-   
-      <S.Search >
-      {isLocal1 && <h1  style={{ position:"absolute" }} >Local 1</h1>}
-      {isLocal2 && <h1  style={{ position:"absolute" }} >Local 2</h1>}
-      {isLocal3 && <h1  style={{ position:"absolute" }} >Local 3</h1>}
-        <S.S1 isLocal1={isLocal1} onClick={() =>setIsLocal1(!isLocal1) & setIsLocal2(false) & setIsLocal3(false)}>
-        <FaMapMarkerAlt  size="70"   style={{ margin: '200px 0 0 700px', position:"absolute" }} />
+    <S.Container>
+      <S.Search>
+        {isLocal1 && <h1 style={{ position: "fixed" }}>Local 1</h1>}
+        {isLocal2 && <h1 style={{ position: "fixed" }}>Local 2</h1>}
+        {isLocal3 && <h1 style={{ position: "fixed" }}>Local 3</h1>}
+        <S.S1
+          isLocal1={isLocal1}
+          onClick={() =>
+            setIsLocal1(!isLocal1) & setIsLocal2(false) & setIsLocal3(false)
+          }
+        >
+          <FaMapMarkerAlt
+            size="30"
+            style={{ margin: "200px 0 0 700px", position: "absolute" }}
+          />
         </S.S1>
-        <S.S2 isLocal2={isLocal2} onClick={() =>setIsLocal2(!isLocal2) & setIsLocal1(false) & setIsLocal3(false)}>
-        <FaMapMarkerAlt size="70" style={{ margin: '20px 0 0 500px', position:"absolute" }}/>
+        <S.S2
+          isLocal2={isLocal2}
+          onClick={() =>
+            setIsLocal2(!isLocal2) & setIsLocal1(false) & setIsLocal3(false)
+          }
+        >
+          <FaMapMarkerAlt
+            size="30"
+            style={{ margin: "20px 0 0 500px", position: "absolute" }}
+          />
         </S.S2>
-        <S.S2 isLocal2={isLocal3} onClick={() =>setIsLocal3(!isLocal3) & setIsLocal1(false)  & setIsLocal2(false)}>
-        <FaMapMarkerAlt size="70" style={{ margin: '500px 0 0 800px', position:"absolute" }}/>
+        <S.S2
+          isLocal2={isLocal3}
+          onClick={() =>
+            setIsLocal3(!isLocal3) & setIsLocal1(false) & setIsLocal2(false)
+          }
+        >
+          <FaMapMarkerAlt
+            size="30"
+            style={{ margin: "500px 0 0 800px", position: "absolute" }}
+          />
         </S.S2>
-       
       </S.Search>
-    <img style={{ height: '100%', width: '80%', margin:"0" , minHeight: "100vh", }} src="mapa.jpg"></img>
+      <img
+        style={{
+          height: "100%",
+          width: "100%",
+          minWidth: "2000px",
+          margin: "0",
+          minHeight: "100vh",
+        }}
+        src="mapa.png"
+      ></img>
     </S.Container>
-   
-     
-    </>
   );
 };
 
