@@ -22,6 +22,17 @@ export const S2 = styled.div`
   position: absolute;
 `;
 
+export const S4 = styled.div`
+  color: ${({ isLocal4 }) => (isLocal4 ? "red" : "gray")};
+  position: absolute;
+`;
+export const S5 = styled.div`
+  color: ${({ isLocal5 }) => (isLocal5 ? "red" : "gray")};
+  position: absolute;
+`;
+
+
+
 export const Info = styled.div`
 
 `;
