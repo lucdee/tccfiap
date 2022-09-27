@@ -26,3 +26,17 @@ border-width: 1px 0px 0px 0px;
     max-width: 1300px;
     margin: 0 auto;
 }
+
+.footer{
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    button{
+        background-color: #c07cf4;
+        color: white;
+        border-color:#c07cf4 ;
+        width: 180px;
+    }
+}

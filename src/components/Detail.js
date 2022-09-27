@@ -28,7 +28,12 @@ const Detail = () => {
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum.
           </p>
-          <BsShare />
+          <div className={styles["footer"]}> 
+          <button>Inscreva-se</button>
+           <BsShare />
+         
+          </div>
+        
         </div>
       </div>
     </>

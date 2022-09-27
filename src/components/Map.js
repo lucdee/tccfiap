@@ -75,6 +75,7 @@ console.log(isLocal1)
             size="30"
             style={{ margin: "200px 0 0 500px", position: "absolute" }}
           />
+        
         </S.S5>
       </S.Search>
       <img
