@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from '../styles/Detail.module.scss';
 import Layout from "./Layout";
 import { BsShare } from "react-icons/bs";
+import { TbDoorEnter} from "react-icons/tb";
+import Sub from "./Sub";
 
 const Detail = () => {
   const { id } = useParams();
   const { card } = useParams();
   const { img } = useParams();
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log(isMenuOpen)
   return (
     <>
+      {isMenuOpen && <Sub card={card} setIsMenuOpen={setIsMenuOpen}></Sub>}
       <Layout></Layout>
       <div className={styles["card-bt"]}>
         <img className={styles["card-bt-img"]} src={`/${img}`}></img>
@@ -29,9 +34,9 @@ const Detail = () => {
             PageMaker including versions of Lorem Ipsum.
           </p>
           <div className={styles["footer"]}> 
-          <button>Inscreva-se</button>
-           <BsShare />
-         
+          <TbDoorEnter size="25px"  onClick={() => setIsMenuOpen(true)}/>
+           <BsShare size="25px"/>
+  
           </div>
         
         </div>
