@@ -1,10 +1,26 @@
 import { Field, Form, Formik } from "formik";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { FcLike } from "react-icons/fc";
 import styles from "../styles/Sub.module.scss";
+import emailjs from "emailjs-com"
 
 const Sub = ({ card, id, img, setIsMenuOpen }) => {
+
+ 
+  
+  
+ 
+
+const send = async values => {
+  emailjs.send("service_sq94w6d", "template_1emgebk", values , "PWmsJ6JYjZKg74KL6")
+  .then((result) => {
+    console.log("sucess");
+
+  }, (error) => {
+    console.log(error.text)
+  })
+}
+  
   return (
     <div className={styles['cont']}>
      <div className={styles['cont-form']}>
@@ -23,28 +39,25 @@ const Sub = ({ card, id, img, setIsMenuOpen }) => {
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
         alert(JSON.stringify(values, null, 2));
+        send(values)
       }}
     >
-        <div className={styles['form']}>
       <Form>
-       <div className={styles['row']}>
-        <Field  id="firstName" name="firstName" placeholder="nome" />
-        </div>
-        <div className={styles['row']}>
-        <Field id="lastName" name="lastName" placeholder="data" type="date" />
-        </div>
-      
-        <div className={styles['row']}>
+        <label htmlFor="firstName">First Name</label>
+        <Field id="firstName" name="firstName" placeholder="Jane" />
+
+        <label htmlFor="lastName">Last Name</label>
+        <Field id="lastName" name="lastName" placeholder="Doe" />
+
+        <label htmlFor="email">Email</label>
         <Field
           id="email"
           name="email"
-          placeholder="email"
+          placeholder="jane@acme.com"
           type="email"
         />
-        </div>
-       <button type="submit">Cadastrar</button>
+        <button type="submit">Submit</button>
       </Form>
-      </div>
     </Formik>
    
      </div>
