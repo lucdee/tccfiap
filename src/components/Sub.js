@@ -35,6 +35,7 @@ const send = async values => {
         firstName: '',
         lastName: '',
         email: '',
+        card: card,
       }}
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
