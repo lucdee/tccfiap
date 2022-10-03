@@ -60,7 +60,7 @@ const Home = () => {
           </div>
 
           <div className={styles["destaques"]}>
-            <h1>Gravadoras</h1>
+            <h1>Estúdios de Dança</h1>
             <div className={styles["destaques-card"]}>
               <Card img={"foto6.jpg"} card={"Card"} id={1} />
               <Card img={"foto8.jpg"} card={"Card"} id={1} />

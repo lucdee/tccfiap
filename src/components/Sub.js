@@ -27,7 +27,7 @@ const send = async values => {
     
       <article>
      <h2>Inscreva-se para {card}</h2>
-     <AiOutlineClose size="30px" onClick={() => setIsMenuOpen(false)}/>
+     <AiOutlineClose size="20px" onClick={() => setIsMenuOpen(false)}/>
      </article>
    
      <Formik
@@ -38,25 +38,35 @@ const send = async values => {
       }}
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
-        alert(JSON.stringify(values, null, 2));
+        alert("Inscrição efetuada");
         send(values)
       }}
     >
       <Form>
-        <label htmlFor="firstName">First Name</label>
+
+        <label  className={styles['label']} htmlFor="firstName">Seu Nome
         <Field id="firstName" name="firstName" placeholder="Jane" />
+        </label>
+     
 
-        <label htmlFor="lastName">Last Name</label>
-        <Field id="lastName" name="lastName" placeholder="Doe" />
+        <label className={styles['label']} htmlFor="lastName">Data
+        <Field id="lastName" name="lastName" placeholder="" type="date"/>
+        </label>
+       
 
-        <label htmlFor="email">Email</label>
+        <label className={styles['label']} htmlFor="email">Email
         <Field
           id="email"
           name="email"
           placeholder="jane@acme.com"
           type="email"
         />
-        <button type="submit">Submit</button>
+        </label>
+       
+
+        <label className={styles['label']}>
+        <button type="submit">Enviar</button>
+        </label>
       </Form>
     </Formik>
    
