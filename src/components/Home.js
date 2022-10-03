@@ -52,7 +52,7 @@ const Home = () => {
           <div className={styles["destaques"]}>
             <h1>Destaques da semana</h1>
             <div className={styles["destaques-card"]}>
-              <Card img={"foto2.jpg"} card={"Card"} id={1} />
+              <Card img={"foto2.jpg"} card={"Salão Vila mariana"} id={1} />
               <Card img={"foto3.jpg"} card={"Card"} id={1} />
               <Card img={"foto4.jpg"} card={"Card"} id={1} />
               <Card img={"foto5.jpg"} card={"Card"} id={1} />
